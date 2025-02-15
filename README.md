@@ -2,6 +2,18 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Updates Made
+
+- **Header**: Added a header section with the title "UNII SPHERE" and a pre-register button.
+- **About Section**: Introduced an about section explaining the purpose of Unisphere.
+- **People Section**: Created a section to display team members.
+- **Edu-Vault Section**: Added a section for educational resources.
+- **Human Library Section**: Included a feature description for the human library.
+- **Events Section**: Added a section for upcoming events.
+- **Guided Nest Section**: Created a section for mentorship opportunities.
+- **NGO Section**: Added a section for community support initiatives.
+- **Goal Section**: Defined the mission and goals of Unisphere.
+
 ## Available Scripts
 
 In the project directory, you can run:

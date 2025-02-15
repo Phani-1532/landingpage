@@ -1,0 +1,87 @@
+.people-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+}
+
+.person {
+    padding: 1rem;
+    background-color: #e0e0e0;
+    border-radius: 5px;
+}
+
+.people h1{
+    padding: 1rem 9rem;
+    text-align: left;
+    font-size: 35px;
+    font-weight: 700;
+    color: #000;
+    
+ }
+ 
+ .people-list{
+     display: flex;
+     align-items: center;
+     justify-content: center;
+ }
+ 
+ .person{
+     padding: 1rem;
+     background-color: #e0e0e0;
+     border-radius: 5px;
+     width: 300px;
+     height: 350px;
+ 
+ }
+ 
+ .person img{
+     width: 90px;
+     height: 90px;
+     object-fit: cover;
+     border-radius: 50%;
+     margin-top: 1rem;
+ }
+ 
+ .person-info{
+     padding: 1rem;
+ }
+ 
+ .person h2{
+     font-family: 'Poppins', sans-serif;
+     font-size: 1.5rem;
+     padding: 0.1rem;
+     color:black;
+ }
+ 
+ .person-info h3{
+     margin-top: 0.1rem;
+     font-family: 'Poppins', sans-serif;
+     font-size: 1.2rem;
+     color: #676464;
+     margin-bottom: 13px;
+ 
+ }
+ 
+ .person-info p{
+     font-family: 'Poppins', sans-serif;
+     font-size: 0.9rem;
+     color: #5d5959;
+ }
+ 
+ .person1{
+     background: linear-gradient(to bottom, #68d1d9, #d6cfcf);
+ }
+ 
+ .person2{
+     background: linear-gradient(to bottom, #D93E39, #e9dddd);
+ }
+ 
+ .person3{
+     background: linear-gradient(to bottom, #f0d36c, #d3dddd);
+ }
+ 
+ .person4{
+     background: linear-gradient(to bottom, #5e95c4, #efe0e0);
+ }

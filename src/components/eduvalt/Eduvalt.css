@@ -1,0 +1,23 @@
+.edu-vault{
+    padding: 1rem 8rem;
+}
+
+.edu-vault h2{
+    font-size: 38px;
+    font-weight: 700;
+    color: #696868;
+}
+
+.edu-vault p{
+    font-size: 1rem;
+    font-weight: 400;
+    color: black;
+}
+
+.edu-vault img{
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+

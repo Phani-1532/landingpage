@@ -1,0 +1,23 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+}
+
+.navbar-img {
+    width: 100px;
+    height: 100px;
+}
+
+.navbar-btn-register {
+    background-color: #000;
+    color: #fff;
+    padding: 1rem 2rem;
+    border-radius: 5px;
+}
+
+
+
+
+
