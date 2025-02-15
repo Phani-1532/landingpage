@@ -6,13 +6,14 @@ import Abhishek from '../../assets/abhishek.svg';
 import Kushbhoo from '../../assets/kushbhoo.svg';
 
 function People() {
-  return (
-    <>
-        <section className="people">
+    return (
+        <>
+            <section className="people">
                 <h1 id='id'>People</h1>
+                <p className="swipe-instruction">Swipe left to see more →</p>
                 <div className="people-list">
                     <div className="person person1">
-                    <h2>"Himanshu"</h2>
+                        <h2>"Himanshu"</h2>
                         <img src={Himanshu} alt="Manish" />
                         <div className="person-info">
                             <h3>Business Management</h3>
@@ -20,7 +21,7 @@ function People() {
                         </div>
                     </div>
                     <div className="person person2">
-                    <h2>"Tarun"</h2>
+                        <h2>"Tarun"</h2>
                         <img src={Tarun} alt="Manish" />
                         <div className="person-info">
                             <h3>Bachelors in UI/UX</h3>
@@ -28,7 +29,7 @@ function People() {
                         </div>
                     </div>
                     <div className="person person3">
-                    <h2>"Abhishek"</h2>
+                        <h2>"Abhishek"</h2>
                         <img src={Abhishek} alt="Manish" />
                         <div className="person-info">
                             <h3>B.Tech</h3>
@@ -36,18 +37,18 @@ function People() {
                         </div>
                     </div>
                     <div className="person person4">
-                    <h2>"Kushbhoo"</h2>
+                        <h2>"Kushbhoo"</h2>
                         <img src={Kushbhoo} alt="Manish" />
                         <div className="person-info">
                             <h3>MBA</h3>
                             <p>Student at UPES  |  Works as Marketing Manager  |  Want ot be a successful Marketing Expert  |  Likes to teravel a lot.</p>
                         </div>
                     </div>
-                    
+
                 </div>
             </section>
-    </>
-  )
+        </>
+    )
 }
 
 export default People

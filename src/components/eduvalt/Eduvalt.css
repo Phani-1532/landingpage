@@ -1,30 +1,19 @@
+/* Mobile-first approach */
 .edu-vault {
-    padding: 1rem 8rem;
+    padding: 1rem;
+    text-align: center;
 }
 
 .edu-vault h2 {
-    font-size: 38px;
-    font-weight: 700;
-    color: #696868;
+    font-size: 2rem;
+    margin-bottom: 1rem;
 }
 
-.edu-vault p {
-    font-size: 1rem;
-    font-weight: 400;
-    color: black;
-}
-
-.edu-vault h5 {
-    font-size: 1.5rem;
-    font-weight: 700;
-    color: black;
-    margin-top: 1rem;
-}
-
-.edu-vault div {
+.edu-vault-images {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    gap: 10rem;
+    gap: 1rem;
 }
 
 .edu-vault img {
@@ -32,9 +21,23 @@
     height: auto;
 }
 
+.edu-vault p {
+    font-size: 0.9rem;
+    line-height: 1.6;
+    padding: 0 1rem;
+    width: 100%;
+}
+
+.edu-vault h5 {
+    font-size: 1.1rem;
+    margin: 1rem 0;
+    color: black;
+}
+
+/* Remove absolute positioning for mobile */
 .edu-vault img:nth-child(1) {
     position: absolute;
-    width: 230px;
+    width: 280px;
     height: 250px;
     object-fit: cover;
     z-index: 2;
@@ -56,13 +59,14 @@
 
 .human-library {
     padding: 1rem 8rem;
+    text-align: center;
 }
 
 .human-library h2 {
-    font-size: 38px;
-    font-weight: 700;
-    color: #696868;
+    font-size: 2rem;
+    margin-bottom: 1rem;
     text-align: right;
+    padding-right: 50px;
 }
 
 .human-library h5 {
@@ -70,6 +74,13 @@
     font-weight: 700;
     color: black;
     padding-left: 20px;
+    width: 100%;
+}
+
+.human-library p {
+    font-size: 0.9rem;
+    line-height: 1.6;
+    padding: 0 1rem;
     width: 100%;
 }
 
@@ -87,7 +98,7 @@
 .human-library img:nth-child(1) {
     position: absolute;
     width: 300px;
-    height: 220px;
+    height: 240px;
     object-fit: cover;
     z-index: 2;
     cursor: pointer;
@@ -111,15 +122,15 @@
 }
 
 .events h2 {
-    font-size: 38px;
-    font-weight: 700;
-    color: #696868;
+    font-size: 2rem;
+    margin-bottom: 1rem;
 }
 
 .events p {
-    font-size: 1rem;
-    font-weight: 400;
-    color: black;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    padding: 0 1rem;
+    width: 100%;
 }
 
 .events h5 {
@@ -162,16 +173,17 @@
 }
 
 .guided-nest h2 {
-    font-size: 38px;
-    font-weight: 700;
-    color: #696868;
+    font-size: 2rem;
+    margin-bottom: 1rem;
     text-align: right;
+    padding-right: 50px;
 }
 
 .guided-nest p {
-    font-size: 1rem;
-    font-weight: 400;
-    color: black;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    padding: 0 1rem;
+    width: 100%;
 }
 
 .guided-nest h5 {
@@ -220,15 +232,15 @@
 }
 
 .ngo h2 {
-    font-size: 38px;
-    font-weight: 700;
-    color: #696868;
+    font-size: 2rem;
+    margin-bottom: 1rem;
 }
 
 .ngo p {
-    font-size: 1rem;
-    font-weight: 400;
-    color: black;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    padding: 0 1rem;
+    width: 100%;
 }
 
 .ngo h5 {
@@ -268,68 +280,69 @@
 }
 
 .goal {
-    padding: 1rem 8rem;
-}
-
-.goal h2 {
-    font-size: 38px;
-    font-weight: 700;
-    color: #696868;
-}
-
-.goal p {
-    font-size: 1rem;
-    font-weight: 400;
-    color: black;
-}
-
-.goal h2 {
-    font-size: 3.4rem;
-    font-weight: 700;
-    color: black;
-    margin-top: 1rem;
+    padding: 1rem;
     text-align: center;
+}
+
+.goal h2 {
+    font-size: 2rem;
+    margin-top: 1rem;
     margin-bottom: 1rem;
 }
 
 .goal p {
-    font-size: 1.2rem;
-    color: black;
-    text-align: center;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    padding: 0 1rem;
+    width: 100%;
 }
 
+/* Desktop styles */
+@media (min-width: 768px) {
+    .edu-vault {
+        padding: 2rem 8rem;
+        text-align: left;
+    }
+
+    .edu-vault-images {
+        flex-direction: row;
+        gap: 4rem;
+    }
+
+    .edu-vault-images img:nth-child(1) {
+        position: absolute;
+        width: 220px;
+        height: 200px;
+        z-index: 2;
+    }
+
+    .edu-vault img:nth-child(2) {
+        position: relative;
+        width: 200px;
+        height: 250px;
+        z-index: 1;
+    }
+
+    .edu-vault p {
+        width: 50%;
+        font-size: 1rem;
+    }
+}
+
+/* Media Queries for Mobile Layout */
 @media (max-width: 768px) {
-    .edu-vault, .human-library, .events, .guided-nest, .ngo, .goal {
+    .goal {
         padding: 1rem;
     }
-    
-    .edu-vault div, .human-library div, .events div, .guided-nest div, .ngo div {
-        flex-direction: column;
-        gap: 2rem;
-    }
-    
-    .edu-vault h2, .human-library h2, .events h2, .guided-nest h2, .ngo h2 {
-        font-size: 2rem;
-        text-align: center;
-    }
-    
-    .edu-vault img, .human-library img, .events img, .guided-nest img, .ngo img {
-        position: relative;
-        width: 100%;
-        height: auto;
-    }
-    
-    .human-library h5, .guided-nest h5 {
-        text-align: center;
-        padding-left: 0;
-    }
-    
+
     .goal h2 {
         font-size: 2rem;
+        margin: 1rem 0;
     }
-    
+
     .goal p {
-        font-size: 1rem;
+        font-size: 0.9rem;
         padding: 0 1rem;
+        width: 100%;
     }
 }

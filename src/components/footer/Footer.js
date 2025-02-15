@@ -1,5 +1,6 @@
 import React from 'react'
 import './Footer.css'
+import {Link} from 'react-router-dom'
 
 function Footer() {
   return (
@@ -20,8 +21,8 @@ function Footer() {
                 </h1>
                 <p>Fostering Connections, Fueling Success</p>
                 <div className='footer-links'>
-                    <a href='#'><i className='fab fa-instagram'></i>Instagram</a>
-                    <a href='#'><i className='fab fa-linkedin'></i>LinkedIn</a>
+                    <Link to='/'><i className='fab fa-instagram'></i>Instagram</Link>
+                    <Link to='/'><i className='fab fa-linkedin'></i>LinkedIn</Link>
                 </div>
             </div>
         </footer>
