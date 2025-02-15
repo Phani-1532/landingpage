@@ -38,4 +38,16 @@ code {
   .header nav ul {
     flex-direction: column;
   }
+
+  body {
+    overflow-x: hidden;
+  }
+  
+  .people-list {
+    padding-bottom: 1rem;
+  }
+  
+  .person {
+    margin: 0 10px;
+  }
 }

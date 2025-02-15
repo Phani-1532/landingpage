@@ -22,7 +22,7 @@ function Main() {
                     <span className="color1">P</span>
                     <span className="color2">R</span>
                     <span className="color3">E</span>
-                    <span className="color4"> </span>
+                    <span className="color4"> &nbsp; </span>
                     <span className="color5">R</span>
                     <span className="color6">E</span>
                     <span className="color7">G</span>

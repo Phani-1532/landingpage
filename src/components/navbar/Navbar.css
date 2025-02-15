@@ -2,22 +2,35 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 2rem;
+    padding: 1rem;
 }
 
 .navbar-img {
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: auto;
 }
 
 .navbar-btn-register {
     background-color: #000;
     color: #fff;
-    padding: 1rem 2rem;
+    padding: 0.5rem 1rem;
     border-radius: 5px;
+    cursor: pointer;
 }
 
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0.5rem;
+    }
 
+    .navbar-img {
+        width: 60px;
+    }
 
-
-
+    .navbar-btn-register {
+        padding: 0.3rem 0.8rem;
+        font-size: 0.9rem;
+    }
+}
