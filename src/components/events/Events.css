@@ -47,7 +47,7 @@
 
 .event-content {
     background: url('../../assets/eduvaltImages/events2.svg') no-repeat center center;
-    background-size: 60%;
+    background-size: 60% !important;
     padding: 20px;
     border-radius: 10px;
     display: flex;
@@ -142,7 +142,7 @@
 @media (max-width: 768px) {
     .event-content {
         background: url('../../assets/eduvaltImages/events2.svg') no-repeat center center;
-        background-size: 190%;
+        background-size: 190% !important;
         padding: 20px;
         border-radius: 10px;
         display: flex;
@@ -150,7 +150,34 @@
         align-items: center;
         position: relative;
     }
+
+    
 }
+
+@media (max-width: 1024px) {
+    .event-content {
+        background: url('../../assets/eduvaltImages/events2.svg') no-repeat center center;
+        background-size: 80% !important;
+        padding: 20px;
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+
+    .events h2{
+        font-size: 4.5rem !important; 
+    }
+
+    .events{
+        padding: 0rem 9rem !important;
+    }
+
+
+}
+
+
 
 /* Mobile styles */
 @media screen and (max-width: 480px) {
@@ -169,7 +196,7 @@
 
     .event-content {
         background: url('../../assets/eduvaltImages/events2.svg') no-repeat center center;
-        background-size: 120%;
+        background-size: 100% !important;
         padding: 20px;
         border-radius: 10px;
         display: flex;

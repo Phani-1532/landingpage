@@ -76,6 +76,19 @@
     line-height: 1.6;
 }
 
+@media (max-width: 1024px) {
+    .ngo h2{
+        font-size: 4.5rem !important;
+    }
+
+    .ngo{
+        padding: 0rem 1.5rem !important;
+    }
+    
+    
+    
+}
+
 @media screen and (max-width: 480px) {
 
     .ngo {
@@ -118,12 +131,8 @@
     }
 
     .ngo-box p {
-        font-size: 0.65rem !important;
-        line-height: 1.2;   
-        padding: 0 0rem;
-        hyphens: auto;
-        column-count: 1;
-        margin: 1rem auto;
-        max-width: 90%;
+        font-size: 0.68rem !important;
+        padding: 0rem 0rem !important;
+        line-height: 1.2;
     }
 }

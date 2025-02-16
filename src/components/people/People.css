@@ -25,12 +25,12 @@
 }
 
 .people h1 {
-    padding: 1rem 3rem;
-    text-align: left;
-    font-size: 60px;
-    font-weight: 700;
-    color: #000;
-    position: relative;
+    padding: 1rem 3rem !important;
+    text-align: left !important;
+    font-size: 60px !important;
+    font-weight: 700 !important;
+    color: #000 !important;
+    position: relative !important;
 }
 
 .person img {
@@ -155,8 +155,9 @@
 
     .people h1 {
         font-size: 1.5rem !important;
-        padding: 0rem 1rem !important;
+        padding: 1rem 0rem !important;
         margin-bottom: 1rem !important;
+        
     }
 
     .person-info {
@@ -167,7 +168,7 @@
 @media (max-width: 480px) {
     .people {
         padding: 0 1rem;
-        margin-top: 0rem;
+        margin: 0rem 0rem !important;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -175,7 +176,9 @@
 
     .people h1 {
         font-size: 2rem !important;
-        padding: 0rem 0rem !important;
+        padding: 1rem 4rem !important;
+        text-align: left !important;
+        margin-top: 0rem !important;
         text-align: left !important;
     }
 

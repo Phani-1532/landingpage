@@ -75,6 +75,18 @@
     line-height: 1.6;
 }
 
+@media (max-width: 1024px) {
+    .guided-nest{
+        padding: 0rem 1.5rem !important;
+    }
+
+    .guided-nest h2{
+        font-size: 4.5rem !important;
+    }
+    
+    
+}
+
 
 @media screen and (max-width: 480px) {
 
@@ -119,12 +131,8 @@
     }
 
     .guided-nest-box p {
-        font-size: 0.67rem !important;
+        font-size: 0.68rem !important;
+        padding: 0rem 0rem !important;
         line-height: 1.2;
-        padding: 0 0rem;
-        hyphens: auto;
-        column-count: 1;
-        margin: 1rem auto;
-        max-width: 100%;
     }
 }

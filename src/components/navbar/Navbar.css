@@ -25,6 +25,12 @@
     color: #000;
 }
 
+@media (max-width: 1024px) {
+    .navbar{
+        padding: 3rem 5rem !important;
+    }
+}
+
 @media (max-width: 768px) {
     .navbar {
         flex-direction: row;
@@ -45,7 +51,7 @@
 @media (max-width: 480px) {
 
      .navbar{
-        padding: 2rem 2.5rem;
+        padding: 2rem 2.5rem !important;
      }
     .navbar-img img{
         width: 70px;

@@ -76,6 +76,20 @@
 }
 
 
+@media (max-width: 1024px) {
+    .human-library-box p {
+        font-size: 1.1rem !important;
+    }
+
+    .human-library h2{
+        font-size: 4.5rem !important;
+    }
+
+    .human-library{
+        padding: 0rem 1.5rem !important;
+    }
+}
+
 
 /* Mobile: Reverse order (Image First, Text Second) */
 @media screen and (max-width: 480px) {
@@ -117,13 +131,8 @@
     }
 
     .human-library-box p {
-        font-size: 0.67rem !important;
+        font-size: 0.68rem !important;
+        padding: 0rem 0rem !important;
         line-height: 1.2;
-        padding: 0 0rem;
-
-        hyphens: auto;
-        column-count: 1;
-        margin: 1rem auto;
-        max-width: 100%;
     }
 }
