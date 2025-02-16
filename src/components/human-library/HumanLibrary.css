@@ -77,12 +77,11 @@
 
 
 
-
 /* Mobile: Reverse order (Image First, Text Second) */
 @media screen and (max-width: 480px) {
     
     .human-library {
-        padding: 0rem 1rem !important;
+        padding: 0rem 1.4rem !important;
     }
     
     .human-library h2 {

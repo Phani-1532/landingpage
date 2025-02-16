@@ -79,7 +79,7 @@
 @media screen and (max-width: 480px) {
 
     .guided-nest {
-        padding: 0rem 1rem !important;
+        padding: 0rem 1.4rem !important;
     }
     
     .guided-nest h2 {

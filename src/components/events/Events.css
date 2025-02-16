@@ -139,6 +139,19 @@
     line-height: 1.6;
 }
 
+@media (max-width: 768px) {
+    .event-content {
+        background: url('../../assets/eduvaltImages/events2.svg') no-repeat center center;
+        background-size: 190%;
+        padding: 20px;
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+}
+
 /* Mobile styles */
 @media screen and (max-width: 480px) {
     .events {
