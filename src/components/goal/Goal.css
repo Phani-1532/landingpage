@@ -1,21 +1,25 @@
 .goal {
-    padding: 1rem;
+    padding: 0.5rem;
     text-align: center;
 }
 
 .goal h2 {
-    font-size: 2rem;
+    font-size: 6rem;
     margin-top: 1rem;
     margin-bottom: 1rem;
+    color: #000;
+    font-weight: 700;
 }
 
 .goal p {
-    font-size: 0.9rem;
+    font-size: 1.2rem;
     line-height: 1.6;
-    padding: 0 1rem;
-    width: 70%;
+    width: 80%;
     margin: 0 auto;
+    padding: 0 2rem 0 0;
+    color: #2d2b2b;
 }
+
 
 
 @media (max-width: 768px) {
@@ -24,12 +28,12 @@
     }
 
     .goal h2 {
-        font-size: 2rem;
+        font-size: 1.5rem;
         margin: 1rem 0;
     }
 
     .goal p {
-        font-size: 0.9rem;
+        font-size: 0.85rem;
         padding: 0 1rem;
         text-align: justify;
         width: 100%;
@@ -40,5 +44,11 @@
         column-count: 1;
         margin: 1rem auto;
         max-width: 90%;
+    }
+
+    .goal-text {
+        font-size: 0.9rem;
+        line-height: 1.5;
+        padding: 0 0.5rem;
     }
 }

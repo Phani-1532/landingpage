@@ -2,20 +2,34 @@
 .events {
     width: 100%;
     text-align: center;
-    padding: 0rem 1rem;
+    padding: 0rem 15rem 0rem 15rem;
 }
 
 .events h2 {
-    padding: 1rem 8rem;
-    font-size: 2rem;
+    margin-top: 2rem !important;
+    margin-bottom: 1rem !important;
+    font-size: 3rem !important;
+    padding: 1rem 0 !important;
+    text-align: left !important;
+    font-weight: 700 !important;
+}
+
+.events-content {
+    position: relative;
 }
 
 .events-images {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    align-items: start;
+    padding: 0 2rem;
+}
+
+.events-images-box {
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    gap: 10px;
-    padding: 0.4rem;
 }
 
 .events-images-container {
@@ -25,112 +39,155 @@
     align-items: center;
 }
 
-.events-images-container img:nth-child(1) {
-    position: absolute;
-    width: 250px;
-    height: 280px;
-    object-fit: cover;
-    z-index: 2;
-    cursor: pointer;
+.events-images-container img {
+    width: 100%;
+    height: auto;
 }
 
-.events-images-container img:nth-child(1):hover {
-    transform: scale(1.03);
-    transition: transform 0.3s ease-in-out;
-}
-
-.events-images-container img:nth-child(2) {
+.event-content {
+    background: url('../../assets/eduvaltImages/events2.svg') no-repeat center center;
+    background-size: 60%;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: relative;
-    width: 330px;
-    height: 340px;
-    object-fit: cover;
-    z-index: 1;
 }
 
-.events-images-box h5 {
-    font-size: 1.1rem;
-    margin: 0.0rem 0;
-    color: black;
-    text-align: center;
-    font-weight: 700;
-}
-
-.events-images-box p {
-    font-size: 0.9rem;
-    line-height: 1.6;
-    padding: 0 1rem;
+.events-left {
+    display: flex;
+    flex-direction: column;     
+    align-items: flex-start;
     width: 100%;
 }
 
-/* Desktop styles */
-@media (min-width: 768px) {
-    .events {
-        padding: 2rem 8rem;
-    }
+.events-list {
+    width: 100%;
+    padding: 10px;
+}
 
-    .events-images {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        align-items: center;
-    }
+.event-item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
 
-    .events-images-container img:nth-child(1) {
-        position: absolute;
-        width: 280px; /* Increased size */
-        height: 220px;
-        z-index: 2;
-    }
+.event-list .event-item{
+   padding: 0 1rem;
+}
 
-    .events-images-container img:nth-child(2) {
-        position: relative;
-        width: 350px; /* Increased size */
-        height: 380px;
-        z-index: 1;
-    }
+.event-item .event-item-text{
+    width: 300px;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid #0c0b0b;
+    padding: 10px;
+    color: #0c0b0b;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+}
 
-    .events-images-box p {
-        width: 100%;
-        font-size: 1.1rem;
-        line-height: 1.6;
-    }
+.event-item .event-item-text p{
+    margin: 0;
+    font-size: 0.8rem;
+    font-weight: 500;
+    text-align: left;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.event-item input::placeholder{
+    font-size: 0.7rem;
+    font-weight: 500;
+    color: #0c0b0b;
+}
+
+.events-images-box h5 {
+    font-size: 1.5rem !important;
+    color: rgb(36, 32, 32);
+    font-weight: 700;
+    margin: 1rem 0 2rem 0 !important;
+}
+
+.event-item img {
+    width: 90px;
+    height: 90px;
+}
+
+.event-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.event-list {
+    position: absolute;
+    width: 370px !important;
+    height: 390px !important;
+    object-fit: cover;
+    z-index: 2;
+}
+
+.events-images-box p {
+    text-align: left;
+    padding: 0 1rem;
+    font-size: 1.35rem;
+    line-height: 1.6;
 }
 
 /* Mobile styles */
 @media screen and (max-width: 480px) {
+    .events {
+        padding: 0rem 1.5rem !important;
+    }
+
     .events h2 {
-        padding: 1rem;
+        font-size: 1.5rem !important;
+        padding: 1rem 1rem 0rem !important;
     }
 
     .events-images {
-        grid-template-columns: 1fr;
-        gap: 15px;
-        padding: 0.4rem;
+        grid-template-columns: 1fr !important;
     }
 
-    .events-images-container img:nth-child(1) {
-        width: 100px;
-        height: 90px;
+    .event-content {
+        background: url('../../assets/eduvaltImages/events2.svg') no-repeat center center;
+        background-size: 120%;
+        padding: 20px;
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
     }
 
-    .events-images-container img:nth-child(2) {
-        width: 120px;
-        height: 120px;
+    .event-item .event-item-text{
+        width: 160px;
+        height: 30px !important;
+        border-radius: 5px;
+        border: 1px solid #0c0b0b;
+        padding: 10px;
+        
     }
 
-    .events-images-box h5 {
-        font-size: 0.8rem;
-        font-weight: bold;
-        text-align: center;
+    .event-item .event-item-text p{
+        font-size: 0.5rem;
+        font-weight: 500;
+        color: #0c0b0b;
     }
 
-    .events-images-box p {
-        font-size: 0.9rem;
-        line-height: 1.4;
-        padding: 0 0rem;
-        text-align: justify;
-        hyphens: auto;
-        column-count: 1;
-        margin: 1rem auto;
-        max-width: 90%;
+
+    .event-item img{
+        width: 50px;
+        height: 50px;
     }
+
+
 }

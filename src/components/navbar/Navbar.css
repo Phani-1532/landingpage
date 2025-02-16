@@ -2,7 +2,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 6rem;
+    padding: 1.7rem 1rem;
 }
 
 .navbar-img {
@@ -16,6 +16,13 @@
     padding: 0.5rem 1rem;
     border-radius: 5px;
     cursor: pointer;
+    border: none;
+    outline: none;
+}
+
+.navbar-btn-register:hover{
+    background-color: #fff;
+    color: #000;
 }
 
 @media (max-width: 768px) {
@@ -33,4 +40,23 @@
         padding: 0.3rem 0.8rem;
         font-size: 0.9rem;
     }
+}
+
+@media (max-width: 480px) {
+
+     .navbar{
+        padding: 2rem 2.5rem;
+     }
+    .navbar-img img{
+        width: 70px;
+    }
+
+    .navbar-btn .navbar-btn-register{
+        padding: 0.3rem 0.8rem;
+        width: 80px;
+        font-size: 0.6rem;
+    }
+    
+
+
 }

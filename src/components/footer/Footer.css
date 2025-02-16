@@ -1,43 +1,69 @@
 .color1 {
-    color: #FF5733;
+    color: #DA3E39 !important;
 }
+
 .color2 {
-    color: #33FF57;
+    color: #38A3AC !important;
 }
+
 .color3 {
-    color: #F3FF33;
+    color: #DFC462 !important;
 }
+
 .color4 {
-    color: #F3FF33;
+    color: #DFC462 !important;
 }
+
 .color5 {
-    color: #FF33A1;
+    color: #889095 !important;
 }
+
 .color6 {
-    color: #33FFF5;
+    color: #E9877A !important;
 }
+
 .color7 {
-    color: #FF8C33;
+    color: #A7829D !important;
 }
+
 .color8 {
-    color: #8C33FF;
+    color: #E87F72 !important;
 }
+
 .color9 {
-    color: #FF33D4;
+    color: #38A3AC !important;
 }
+
 .color10 {
-    color: #33FF8C;
+    color: #DA3E39 !important;
 }
 
 .footer {
-    background: linear-gradient(to bottom, #fafac5, #b7e8fc);
+    background: linear-gradient(to bottom, #fffde2, #c1ebfb);
     padding: 1rem 8rem;
     margin-top: 2.5rem;
+   
 }
 
 .footer-container {
     display: flex;
     flex-direction: column;
+}
+
+.footer-logo-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+
+
+.footer-logo img {
+    width: 30px;
+    height: 30px;
+    margin-right: 0.4rem;
+    margin-bottom: 0.3rem;
+    margin-left: -0.3rem;
 }
 
 .footer-container h1 {
@@ -75,9 +101,9 @@
     margin-right: 0.5rem;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 480px) {
     .footer {
-        padding: 1rem;
+        padding: 1rem 2.5rem;
         margin-top: 1rem;
     }
     .footer-container h1 {
@@ -85,11 +111,19 @@
     }
     .footer-container p {
         font-size: 0.8rem;
-        text-align: center;
+        
     }
     .footer-links {
-        align-items: center;
-        gap: 0.5rem;
+       
+        gap: 0.1rem;
+    }
+
+    .footer-links a {
+        font-size: 0.8rem;
+    }
+
+    .footer-links a i {
+        font-size: 0.8rem;
     }
 }
 

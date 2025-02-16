@@ -2,32 +2,32 @@
 .guided-nest {
     width: 100%;
     text-align: center;
-    padding: 2rem 1rem;
+    padding: 0rem 0rem 0rem 7rem !important;
 }
 
 /* Title styling */
 .guided-nest h2 {
-    font-size: 2rem;
-    margin-bottom: 1rem;
+    margin-bottom: 1rem !important;
+    font-size: 5rem !important;
+    padding: 1rem 8rem !important;
+    text-align: right !important;
+    font-weight: 700 !important;
 }
 
 /* Main container */
 .guided-nest-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    gap: 2rem;
-    width: 90%;
-    max-width: 1200px;
-    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    align-items: start;
+    padding: 0 2rem;
 }
 
 /* Box structure */
 .guided-nest-box {
-    flex: 1;
-    min-width: 280px;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 /* Image container */
@@ -41,95 +41,90 @@
 /* Image styling */
 .guided-nest-images img:nth-child(1) {
     position: absolute;
-    width: 250px;
-    height: 220px;
+    width: 350px !important;
+    height: 310px !important;
     object-fit: cover;
     z-index: 2;
-    cursor: pointer;
-    transition: transform 0.3s ease-in-out;
 }
 
-.guided-nest-images img:nth-child(1):hover {
-    transform: scale(1.03);
-}
 
 .guided-nest-images img:nth-child(2) {
     position: relative;
-    width: 330px;
-    height: 340px;
+    width: 450px !important;
+    height: 450px !important;
     object-fit: cover;
     z-index: 1;
 }
 
 /* Subtitle */
 .guided-nest h5 {
-    font-size: 1.1rem;
-    margin: 0.0rem 0;
-    color: black;
-    text-align: center;
+    font-size: 1.7rem !important;
+    margin: 0rem 0;
+    color: rgb(36, 32, 32);
     font-weight: 700;
+    margin-top: 1rem !important;
+    margin-bottom: 2rem !important;
 }
 
 /* Text content */
 .guided-nest-box p {
-    font-size: 0.9rem;
-    line-height: 1.6;
+    text-align: center;
+    margin: 0;
     padding: 0 1rem;
-    width: 100%;
+    font-size: 1.35rem;
+    line-height: 1.6;
 }
 
-/* Responsive design */
-@media (min-width: 768px) {
-    .guided-nest-container {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .guided-nest-box {
-        max-width: 45%;
-    }
-
-    .guided-nest-box p {
-        font-size: 1.1rem;
-    }
-}
 
 @media screen and (max-width: 480px) {
-    .guided-nest-container {
-        flex-direction: column-reverse; /* Reverse order so image comes first on mobile */
-        text-align: center;
+
+    .guided-nest {
+        padding: 0rem 1rem !important;
+    }
+    
+    .guided-nest h2 {
+        font-size: 1.5rem !important;
+        padding: 1rem 1rem 0rem !important;
     }
 
-    .guided-nest h2 {
-        font-size: 1.8rem;
+    .guided-nest-container {
+        display: grid !important;
+        padding: 0rem 0rem !important;
+        grid-template-columns: 1fr 1fr !important;
+        align-items: flex-start !important;
     }
 
     .guided-nest-images img:nth-child(1) {
-        width: 100px;
-        height: 80px;
+        width: 100px !important;
+        height: 90px !important;
+        z-index: 2;
     }
 
     .guided-nest-images img:nth-child(2) {
-        width: 120px;
-        height: 120px;
+        width: 120px !important;
+        height: 120px !important;
+        z-index: 1;
     }
 
     .guided-nest h5 {
-        font-size: 0.8rem;
-        font-weight: bold;
-        margin-top: 5px;
+        font-size: 0.7rem !important;
+        font-weight: bold !important;
+        margin-top: 5px !important;
+        text-align: center !important;
+    }
+
+    .guided-nest-box:last-child {
+        align-self: flex-start;
+        margin-top: -0.5rem !important;
     }
 
     .guided-nest-box p {
-        font-size: 0.9rem;
-        line-height: 1.4;
+        font-size: 0.67rem !important;
+        line-height: 1.2;
         padding: 0 0rem;
-        text-align: justify;
         hyphens: auto;
         column-count: 1;
         margin: 1rem auto;
-        max-width: 90%;
+        max-width: 100%;
     }
 }

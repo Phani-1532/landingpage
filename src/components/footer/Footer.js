@@ -1,12 +1,17 @@
 import React from 'react'
 import './Footer.css'
 import {Link} from 'react-router-dom'
+import logo from '../../assets/logo.svg'
 
 function Footer() {
   return (
     <>
         <footer className='footer'>
             <div className='footer-container'>
+                <div className='footer-logo-container'> 
+                <div className='footer-logo'>
+                  <img src={logo} alt='logo' />
+                </div>
             <h1>
                     <span className="color1">U</span>
                     <span className="color2">N</span>
@@ -19,6 +24,7 @@ function Footer() {
                     <span className="color9">R</span>
                     <span className="color10">E</span>
                 </h1>
+                </div>
                 <p>Fostering Connections, Fueling Success</p>
                 <div className='footer-links'>
                     <Link to='/'><i className='fab fa-instagram'></i>Instagram</Link>

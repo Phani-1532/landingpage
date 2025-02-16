@@ -16,7 +16,7 @@ function Eduvalt() {
                     <h5>Your Path to Smarter Learning</h5>
                 </div>
                 <div className="edu-vault-images-box">
-                    <p>Here, we provide a comprehensive collection of E-books, study guides, reference materials, past papers, and meticulously crafted handmade notes to support students and professionals in their learning journey. Our platform is designed with user-friendly features such as advanced search functionality, personalized bookmarks, and offline access, ensuring seamless learning anytime, anywhere.</p>
+                    <p>Here we Provide E-books, study guides, and reference materials, past papers, handmade notes, while features like search, bookmarks, and offline access improve usability.</p>
                 </div>
             </div>
         </section>

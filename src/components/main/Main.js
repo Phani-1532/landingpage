@@ -1,5 +1,6 @@
 import React from 'react';
 import './Main.css';
+import arrow from '../../assets/arrow.svg';
 
 function Main() {
     return (
@@ -19,23 +20,9 @@ function Main() {
                 </h1>
                 <p>"Connect" "Collaborate" "Success"</p>
                 <button className="cta-button">
-                    <span className="color1">P</span>
-                    <span className="color2">R</span>
-                    <span className="color3">E</span>
-                    <span className="color4"> &nbsp; </span>
-                    <span className="color5">R</span>
-                    <span className="color6">E</span>
-                    <span className="color7">G</span>
-                    <span className="color8">I</span>
-                    <span className="color9">S</span>
-                    <span className="color10">T</span>
-                    <span className="color1">E</span>
-                    <span className="color2">R</span>
-                    <span className="dot"></span>
-                    <span className="dot"></span>
-                    <i className="fas fa-arrow-right" style={{ marginLeft: '0.5rem' }}></i>
+                    <img src={arrow} alt="arrow" className="arrow" />
                 </button>
-                <p><strong>"Get a Head Start Pre-register Now"</strong></p>
+                <p className="cta-text"><strong>"Get a Head Start Pre-register Now"</strong></p>
             </header>
 
             <section className="about">

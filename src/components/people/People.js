@@ -10,7 +10,6 @@ function People() {
         <>
             <section className="people">
                 <h1 id='id'>People</h1>
-                <p className="swipe-instruction">Swipe left to see more →</p>
                 <div className="people-list">
                     <div className="person person1">
                         <h2>"Himanshu"</h2>

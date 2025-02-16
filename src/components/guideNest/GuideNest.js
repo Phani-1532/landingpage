@@ -10,7 +10,7 @@ function GuideNest() {
       <div className="guided-nest-container">
         <div className="guided-nest-box guided-nest-text">
           <p>
-            Matches you with seniors, alumni, industry professionals, and advisors from different universities to support your academic and career development. It provides mentorship, guidance, and networking opportunities to help you achieve your goals. Gain valuable insights, career advice, and industry connections to enhance your learning journey. Engage in meaningful discussions, receive personalized support, and explore new opportunities for growth and success.
+          Matches you with seniors or alumni or industry people and advisors from different universities to support your academic and career development.
           </p>
         </div>
         <div className="guided-nest-box guided-nest-image">

@@ -19,10 +19,7 @@ function Ngo() {
                 </div>
                 <div className="ngo-box">
                     <p>
-                        This feature offers opportunities for volunteering with NGOs, internships, and social impact projects. 
-                        It includes skill-based volunteering, event collaboration, and hands-on experiences to enhance professional 
-                        and personal growth. Gain real-world exposure, develop leadership skills, and make a meaningful difference 
-                        in communities. Expand your network, boost your resume, and contribute to causes that align with your passions.
+                    This feature offer you opportunities for volunteering for ngos, internships, and social impact projects, Skill-Based Volunteering and Event Collaboration
                     </p>
                 </div>
             </div>
