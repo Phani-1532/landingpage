@@ -3,6 +3,7 @@
     width: 100%;
     text-align: center;
     padding: 0rem 15rem 0rem 15rem;
+    margin-bottom:2rem;
 }
 
 .events h2 {
@@ -102,11 +103,7 @@
     align-items: center;
 }
 
-.event-item input::placeholder{
-    font-size: 0.7rem;
-    font-weight: 500;
-    color: #0c0b0b;
-}
+
 
 .events-images-box h5 {
     font-size: 1.5rem !important;
