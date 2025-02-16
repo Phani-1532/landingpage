@@ -108,7 +108,7 @@
         display: grid !important;
         padding: 0rem 0rem !important;
         grid-template-columns: 1fr 1fr !important;
-        align-items: center !important;
+        align-items: flex-start !important;
     }
 
     .human-library-images img:nth-child(1) {

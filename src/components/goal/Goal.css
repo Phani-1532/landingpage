@@ -22,7 +22,7 @@
 
 @media (max-width: 1024px) {
     .goal h2{
-        font-size: 4.5rem !important;
+        font-size: 3.5rem !important;
     }
 
     .goal{
@@ -30,7 +30,8 @@
     }
 
     .goal p{
-        font-size: 1.1rem !important;
+        font-size: 1.65rem !important;
+        padding: 0rem 0rem !important;
     }
     
 }
@@ -70,7 +71,7 @@
 
 @media (max-width: 480px) {
     .goal h2{
-        font-size: 2.5rem !important;
+        font-size: 1.65rem !important;
     }
 
     .goal p{
