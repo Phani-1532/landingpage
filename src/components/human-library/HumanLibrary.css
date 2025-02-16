@@ -1,0 +1,153 @@
+/* Section styling */
+.human-library {
+    width: 100%;
+    text-align: center;
+    padding: 0rem 1rem;
+}
+
+/* Title styling */
+.human-library h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+/* Main container */
+.human-library-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Box structure */
+.human-library-box {
+    flex: 1;
+    min-width: 280px;
+    text-align: center;
+}
+
+/* Image container */
+.human-library-images {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Image styling */
+.human-library-images img:nth-child(1) {
+    position: absolute;
+    width: 250px;
+    height: 220px;
+    object-fit: cover;
+    z-index: 2;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+.human-library-images img:nth-child(1):hover {
+    transform: scale(1.03);
+}
+
+.human-library-images img:nth-child(2) {
+    position: relative;
+    width: 330px;
+    height: 340px;
+    object-fit: cover;
+    z-index: 1;
+}
+
+/* Subtitle */
+.human-library h5 {
+    font-size: 1.1rem;
+    margin: 0.0rem 0;
+    color: black;
+    text-align: center;
+    font-weight: 700;
+}
+
+/* Text content */
+.human-library-box p {
+    font-size: 0.9rem;
+    line-height: 1.6;
+    padding: 0 1rem;
+    width: 100%;
+}
+
+/* Desktop: Keep text first, images second */
+@media (min-width: 768px) {
+    .human-library-container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .text-box {
+        order: 1; /* Text First */
+    }
+
+    .image-box {
+        order: 2; /* Image Second */
+    }
+
+    .human-library-box p {
+        font-size: 1.1rem;
+    }
+}
+
+/* Mobile: Reverse order (Image First, Text Second) */
+@media screen and (max-width: 480px) {
+    .human-library-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .human-library h2 {
+        font-size: 1.8rem;
+    }
+
+    .human-library-box {
+        width: 100%;
+    }
+
+    /* Reverse order for mobile */
+    .text-box {
+        order: 2; /* Text Second */
+    }
+
+    .image-box {
+        order: 1; /* Image First */
+    }
+
+    .human-library-images img:nth-child(1) {
+        width: 100px;
+        height: 90px;
+    }
+
+    .human-library-images img:nth-child(2) {
+        width: 120px;
+        height: 120px;
+    }
+
+    .human-library h5 {
+        font-size: 0.8rem;
+        font-weight: bold;
+        margin-top: 5px;
+    }
+
+    .human-library-box p {
+        font-size: 0.9rem;
+        line-height: 1.4;
+        padding: 0 0rem;
+        text-align: justify;
+        hyphens: auto;
+        column-count: 1;
+        margin: 1rem auto;
+        max-width: 90%;
+    }
+}

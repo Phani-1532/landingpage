@@ -1,0 +1,136 @@
+/* Section styling */
+.ngo {
+    width: 100%;
+    text-align: center;
+    padding: 1rem 1rem;
+}
+
+/* Title styling */
+.ngo h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+/* Main container */
+.ngo-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Box structure (same as Events) */
+.ngo-box {
+    flex: 1;
+    min-width: 280px;
+    text-align: center;
+}
+
+/* Image container */
+.ngo-images {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Image styling */
+.ngo-images img:nth-child(1) {
+    position: absolute;
+    width: 260px;
+    height: 200px;
+    object-fit: cover;
+    z-index: 2;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+.ngo-images img:nth-child(1):hover {
+    transform: scale(1.03);
+}
+
+.ngo-images img:nth-child(2) {
+    position: relative;
+    width: 330px;
+    height: 330px;
+    object-fit: cover;
+    z-index: 1;
+}
+
+/* Subtitle */
+.ngo h5 {
+    font-size: 1.1rem;
+    margin: 0.0rem 0;
+    color: black;
+    text-align: center;
+    font-weight: 700;
+    
+}
+
+/* Text content */
+.ngo-box p {
+    font-size: 0.9rem;
+    line-height: 1.6;
+    padding: 0 1rem;
+    width: 100%;
+}
+
+/* Responsive design */
+@media (min-width: 768px) {
+    .ngo-container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .ngo-box {
+        max-width: 45%;
+    }
+
+    .ngo-box p {
+        font-size: 1.1rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .ngo-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .ngo h2 {
+        font-size: 1.8rem;
+    }
+
+    .ngo-images img:nth-child(1) {
+        width: 100px;
+        height: 110px;
+    }
+
+    .ngo-images img:nth-child(2) {
+        width: 120px;
+        height: 120px;
+    }
+
+    .ngo h5 {
+        font-size: 0.8rem;
+        font-weight: bold;
+        margin-top: 5px;
+    }
+
+    .ngo-box p {
+        font-size: 0.9rem;
+        line-height: 1.4;
+        padding: 0 0rem;
+        text-align: justify;
+        hyphens: auto;
+        column-count: 1;
+        margin: 1rem auto;
+        max-width: 90%;
+    }
+}

@@ -1,0 +1,135 @@
+/* Section styling */
+.guided-nest {
+    width: 100%;
+    text-align: center;
+    padding: 2rem 1rem;
+}
+
+/* Title styling */
+.guided-nest h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+/* Main container */
+.guided-nest-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Box structure */
+.guided-nest-box {
+    flex: 1;
+    min-width: 280px;
+    text-align: center;
+}
+
+/* Image container */
+.guided-nest-images {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Image styling */
+.guided-nest-images img:nth-child(1) {
+    position: absolute;
+    width: 250px;
+    height: 220px;
+    object-fit: cover;
+    z-index: 2;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+.guided-nest-images img:nth-child(1):hover {
+    transform: scale(1.03);
+}
+
+.guided-nest-images img:nth-child(2) {
+    position: relative;
+    width: 330px;
+    height: 340px;
+    object-fit: cover;
+    z-index: 1;
+}
+
+/* Subtitle */
+.guided-nest h5 {
+    font-size: 1.1rem;
+    margin: 0.0rem 0;
+    color: black;
+    text-align: center;
+    font-weight: 700;
+}
+
+/* Text content */
+.guided-nest-box p {
+    font-size: 0.9rem;
+    line-height: 1.6;
+    padding: 0 1rem;
+    width: 100%;
+}
+
+/* Responsive design */
+@media (min-width: 768px) {
+    .guided-nest-container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .guided-nest-box {
+        max-width: 45%;
+    }
+
+    .guided-nest-box p {
+        font-size: 1.1rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .guided-nest-container {
+        flex-direction: column-reverse; /* Reverse order so image comes first on mobile */
+        text-align: center;
+    }
+
+    .guided-nest h2 {
+        font-size: 1.8rem;
+    }
+
+    .guided-nest-images img:nth-child(1) {
+        width: 100px;
+        height: 80px;
+    }
+
+    .guided-nest-images img:nth-child(2) {
+        width: 120px;
+        height: 120px;
+    }
+
+    .guided-nest h5 {
+        font-size: 0.8rem;
+        font-weight: bold;
+        margin-top: 5px;
+    }
+
+    .guided-nest-box p {
+        font-size: 0.9rem;
+        line-height: 1.4;
+        padding: 0 0rem;
+        text-align: justify;
+        hyphens: auto;
+        column-count: 1;
+        margin: 1rem auto;
+        max-width: 90%;
+    }
+}
